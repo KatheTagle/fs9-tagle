@@ -447,7 +447,7 @@ def checkout(request):
 
         # Redirect after successful payment
         "success_redirect_url": (
-            "http://localhost:5173/checkout-success"
+            "https://fs9-tagle.vercel.app/checkout-success"
         ),
 
         # Customer information
