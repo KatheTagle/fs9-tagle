@@ -2,29 +2,57 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    # Authentication
+    # =========================
+    # AUTH
+    # =========================
     path("register/", views.register_user, name="register"),
 
-    # Products
-    path("products/", views.product_list, name="product-list"),
-    path("products/<int:pk>/", views.get_product_detail, name="product-detail"),
-
-    # Profile
+    # =========================
+    # PROFILE
+    # =========================
     path("profile/", views.profile, name="profile"),
 
-    # Cart
+    # =========================
+    # PRODUCTS
+    # =========================
+    path("products/", views.product_list, name="product-list"),
+    path(
+        "products/<int:pk>/",
+        views.get_product_detail,
+        name="product-detail",
+    ),
+
+    # =========================
+    # CART
+    # =========================
     path("cart/", views.get_cart, name="get-cart"),
     path("cart/add/", views.add_to_cart, name="add-to-cart"),
-    path("cart/<int:pk>/", views.update_cart, name="update-cart"),
-    path("cart/<int:pk>/delete/", views.delete_cart, name="delete-cart"),
+    path(
+        "cart/<int:pk>/",
+        views.update_cart,
+        name="update-cart",
+    ),
+    path(
+        "cart/<int:pk>/delete/",
+        views.delete_cart,
+        name="delete-cart",
+    ),
 
-    # Checkout
-    path("checkout/", views.checkout, name="checkout"),
+    # =========================
+    # CHECKOUT
+    # =========================
+    path(
+        "checkout/",
+        views.checkout,
+        name="checkout",
+    ),
 
-    # Purchase history
+    # =========================
+    # PURCHASE HISTORY
+    # =========================
     path(
         "purchase-history/",
         views.purchase_history,
-        name="purchase-history"
+        name="purchase-history",
     ),
 ]

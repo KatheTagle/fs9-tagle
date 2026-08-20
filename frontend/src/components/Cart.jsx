@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { FaTrash } from "react-icons/fa";
@@ -62,8 +63,8 @@ const Cart = () => {
 
       setError(
         error.response?.data?.error ||
-        error.response?.data?.detail ||
-        "Unable to load cart."
+          error.response?.data?.detail ||
+          "Unable to load cart."
       );
     } finally {
       setLoading(false);
@@ -78,27 +79,25 @@ const Cart = () => {
   // CHECKOUT
   // =========================
   const handleCheckout = () => {
-  const token = localStorage.getItem("access_token");
+    const token = localStorage.getItem("access_token");
 
-  setError("");
+    setError("");
 
-  if (!token) {
-    setError("Please log in first.");
-    return;
-  }
+    if (!token) {
+      setError("Please log in first.");
+      return;
+    }
 
-  if (cartItems.length === 0) {
-    setError("Your cart is empty.");
-    return;
-  }
+    if (cartItems.length === 0) {
+      setError("Your cart is empty.");
+      return;
+    }
 
-  // IMPORTANT:
-  // Do NOT call /api/checkout/ here.
-  // Go to the checkout page first so the
-  // customer can enter shipping information.
-
-  navigate("/checkout");
-};
+    // Go to checkout page first.
+    // The checkout page will collect shipping information
+    // and then call /api/checkout/.
+    navigate("/checkout");
+  };
 
   // =========================
   // UPDATE QUANTITY
@@ -124,8 +123,11 @@ const Cart = () => {
         newQuantity
       );
 
+      // IMPORTANT:
+      // Backend route is:
+      // PUT /api/cart/<id>/
       const response = await axios.put(
-        `${BASE_URL}/api/cart/update/${cartId}/`,
+        `${BASE_URL}/api/cart/${cartId}/`,
         {
           quantity: newQuantity,
         },
@@ -161,8 +163,8 @@ const Cart = () => {
 
       setError(
         error.response?.data?.error ||
-        error.response?.data?.detail ||
-        "Unable to update quantity."
+          error.response?.data?.detail ||
+          "Unable to update quantity."
       );
     }
   };
@@ -204,8 +206,8 @@ const Cart = () => {
 
       setError(
         error.response?.data?.error ||
-        error.response?.data?.detail ||
-        "Unable to remove item from cart."
+          error.response?.data?.detail ||
+          "Unable to remove item from cart."
       );
     }
   };
@@ -515,3 +517,4 @@ const Cart = () => {
 };
 
 export default Cart;
+
