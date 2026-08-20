@@ -61,6 +61,7 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173"
+    "https://fs9-tagle-o3s4nyna8-kathe6.vercel.app"
 ]
 
 ROOT_URLCONF = 'backend.urls'

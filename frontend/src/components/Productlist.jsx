@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
@@ -6,7 +7,7 @@ import { BASE_URL } from "../api/base";
 const ProductList = ({ showAll = false }) => {
   const [products, setProducts] = useState([]);
 
-  const PrductData = async () => {
+  const ProductData = async () => {
     try {
       const response = await axios.get(
         `${BASE_URL}/api/products/`
@@ -14,12 +15,15 @@ const ProductList = ({ showAll = false }) => {
 
       setProducts(response.data);
     } catch (error) {
-      console.log(error);
+      console.error(
+        "Failed to load products:",
+        error.response?.data || error.message
+      );
     }
   };
 
   useEffect(() => {
-    PrductData();
+    ProductData();
   }, []);
 
   // Show only 6 products unless showAll is true
@@ -36,8 +40,8 @@ const ProductList = ({ showAll = false }) => {
         </h2>
 
         <p className="mt-3 text-gray-600">
-          Browse our latest devices Cisco products designed for style,
-          comfort, and performance.
+          Browse our latest devices Cisco products designed for
+          style, comfort, and performance.
         </p>
       </div>
 
@@ -52,9 +56,19 @@ const ProductList = ({ showAll = false }) => {
 
               {/* Product Image */}
               <img
-                src={`${BASE_URL}${product.image}`}
+                src={
+                  product.image?.startsWith("http")
+                    ? product.image
+                    : `${BASE_URL}${product.image}`
+                }
                 alt={product.product_name}
                 className="h-64 w-full object-contain p-4"
+                onError={(e) => {
+                  console.error(
+                    "Failed to load product image:",
+                    product.image
+                  );
+                }}
               />
 
               {/* Product Information */}
@@ -72,6 +86,7 @@ const ProductList = ({ showAll = false }) => {
                 </p>
 
                 <button
+                  type="button"
                   className="mt-5 w-full rounded-lg bg-indigo-600 py-3 font-semibold text-white transition hover:bg-indigo-700"
                 >
                   VIEW PRODUCT DETAILS
@@ -99,3 +114,4 @@ const ProductList = ({ showAll = false }) => {
 };
 
 export default ProductList;
+
