@@ -1,0 +1,483 @@
+[
+
+    {
+      "model": "base.product", 
+      "pk": 1,
+      "fields": {
+
+        "product_name": "Catalyst 9200 Series Switch",
+        "description": "Cisco - Access Switch device for enterprise networks",
+        "product_price": "15000.00",
+        "brand": "Cisco",
+        "countInStock": 10,
+        "image": "product_images/1.png",
+        "created_at": "2026-08-01T03:48:42.550217Z",
+        "updated_at": "2026-08-01T03:48:42.550217Z"
+      }
+    },
+    {
+        "model": "base.product",
+        "pk": 2,
+        "fields": {
+        "product_name": "Dell PowerEdge R740",
+        "description": "Dell - Rack Server for data centers and enterprise applications",
+        "product_price": "20000.00",
+        "brand": "Dell",
+        "countInStock": 15,
+        "image": "/images/product_images/10.png",
+        "created_at": "2025-06-26T05:46:49.361437Z",
+        "updated_at": "2026-08-01T05:46:49.361437Z"
+        }
+    },
+    {
+        "model": "base.product",
+        "pk": 3,
+        "fields": {
+        "product_name": "HP ProLiant DL380 Gen10",
+        "description": "HP - Rack Server for virtualization and cloud computing",
+        "product_price": "70000.00",
+        "brand": "HP",
+        "countInStock": 4,
+        "image": "/images/product_images/3.png",
+        "created_at": "2025-06-26T05:46:49.361437Z",
+        "updated_at": "2026-08-01T05:49:25.482831Z"
+        }
+    },
+    {
+        "model": "base.product",
+        "pk": 4,
+        "fields": {
+        "product_name": "Catalyst 9400 Series Switch",
+        "description": "HP - Rack Server for virtualization and cloud computing",
+        "product_price": "70000.00",
+        "brand": "HP",
+        "countInStock": 4,
+        "image": "/images/product_images/4.png",
+        "created_at": "2025-06-26T05:46:49.361437Z",
+        "updated_at": "2026-08-01T05:49:25.482831Z"
+    }
+},
+{
+    "model": "base.product",
+    "pk": 5,
+    "fields": {
+    "product_name": "Cisco Nexus 9300 Switch",
+    "description": "Cisco - Data Center Switch for enterprise networking",
+    "product_price": "98500.00",
+    "brand": "Cisco",
+    "countInStock": 8,
+    "image": "/images/product_images/5.png",
+    "created_at": "2025-06-26T05:46:49.361437Z",
+    "updated_at": "2026-08-01T05:49:25.482831Z"
+    }
+  },
+  {
+    "model": "base.product",
+    "pk": 6,
+    "fields": {
+    "product_name": "Cisco ISR 1100 Router",
+    "description": "Cisco - Branch Router with integrated security",
+    "product_price": "35000.00",
+    "brand": "Cisco",
+    "countInStock": 15,
+    "image": "/images/product_images/6.png",
+    "created_at": "2025-06-26T05:46:49.361437Z",
+    "updated_at": "2026-08-01T05:49:25.482831Z"
+    }
+  },
+  {
+    "model": "base.product",
+    "pk": 7,
+    "fields": {
+    "product_name": "Cisco ISR 4000 Router",
+    "description": "Cisco - Enterprise WAN Router",
+    "product_price": "85000.00",
+    "brand": "Cisco",
+    "countInStock": 10,
+    "image": "/images/product_images/7.png",
+    "created_at": "2025-06-26T05:46:49.361437Z",
+    "updated_at": "2026-08-01T05:49:25.482831Z"
+    }
+  },
+  {
+    "model": "base.product",
+    "pk": 8,
+    "fields": {
+    "product_name": "Cisco ASR 1001-X Router",
+    "description": "Cisco - Aggregation Services Router",
+    "product_price": "175000.00",
+    "brand": "Cisco",
+    "countInStock": 5,
+    "image": "/images/product_images/8.png",
+    "created_at": "2025-06-26T05:46:49.361437Z",
+    "updated_at": "2026-08-01T05:49:25.482831Z"
+    }
+  },
+  {
+    "model": "base.product",
+    "pk": 9,
+    "fields": {
+    "product_name": "Cisco ASA 5506-X Firewall",
+    "description": "Cisco - Network Security Firewall",
+    "product_price": "28500.00",
+    "brand": "Cisco",
+    "countInStock": 12,
+    "image": "/images/product_images/9.png",
+    "created_at": "2025-06-26T05:46:49.361437Z",
+    "updated_at": "2026-08-01T05:49:25.482831Z"
+    }
+  },
+  {
+    "model": "base.product",
+    "pk": 10,
+    "fields": {
+    "product_name": "Cisco Firepower 1010",
+    "description": "Cisco - Next Generation Firewall",
+    "product_price": "65000.00",
+    "brand": "Cisco",
+    "countInStock": 9,
+    "image": "/images/product_images/10.png",
+    "created_at": "2025-06-26T05:46:49.361437Z",
+    "updated_at": "2026-08-01T05:49:25.482831Z"
+    }     
+
+  },
+  {
+    "model": "base.product",
+    "pk": 11,
+    "fields": {   
+    "product_name": "Cisco Meraki MX64",
+    "description": "Cisco Meraki - Cloud Managed Security Appliance",
+    "product_price": "42000.00",
+    "brand": "Cisco Meraki",
+    "countInStock": 18,
+    "image": "/images/product_images/11.png",
+    "created_at":  "2025-06-26T05:46:49.361437Z",
+    "updated_at": "2026-08-01T05:49:25.482831Z"
+    
+    }       
+  },
+  {
+    "model": "base.product",
+    "pk": 12,
+    "fields": {
+    "product_name": "Cisco Meraki MX84",
+    "description": "Cisco Meraki - Enterprise Security Appliance",
+    "product_price": "59000.00",
+    "brand": "Cisco Meraki",
+    "countInStock": 11,
+    "image": "/images/product_images/12.png",
+    "created_at": "2025-06-26T05:46:49.361437Z",
+    "updated_at": "2026-08-01T05:49:25.482831Z"
+    }
+  },
+  {
+    "model": "base.product",
+    "pk": 13,
+    "fields": {
+    "product_name": "Cisco Meraki MX250",
+    "description": "Cisco Meraki - High Performance Security Appliance",
+    "product_price": "195000.00",
+    "brand": "Cisco Meraki",
+    "countInStock": 4,
+    "image": "/images/product_images/13.png",
+    "created_at": "2025-06-26T05:46:49.361437Z",
+    "updated_at": "2026-08-01T05:49:25.482831Z"
+    }
+  },
+  {
+    "model": "base.product",
+    "pk": 14,
+    "fields": {
+    "product_name": "Cisco Meraki MR33",
+    "description": "Cisco Meraki - Wireless Access Point",
+    "product_price": "14500.00",
+    "brand": "Cisco Meraki",
+    "countInStock": 26,
+    "image": "/images/product_images/14.png",
+    "created_at": "2025-06-26T05:46:49.361437Z",
+    "updated_at": "2026-08-01T05:49:25.482831Z"
+    }
+  },
+  {
+    "model": "base.product",
+    "pk": 15,
+    "fields": {
+    "product_name": "Cisco Meraki MR56",
+    "description": "Cisco Meraki - WiFi 6 Access Point",
+    "product_price": "29500.00",
+    "brand": "Cisco Meraki",
+    "countInStock": 14,
+    "image": "/images/product_images/15.png",
+    "created_at": "2025-06-26T05:46:49.361437Z",
+    "updated_at": "2026-08-01T05:49:25.482831Z"
+    }
+  },
+  {
+    "model": "base.product",
+    "pk": 16,
+    "fields": {
+    "product_name": "FortiGate 60E",
+    "description": "Fortinet - Next Generation Firewall",
+    "product_price": "22500.00",
+    "brand": "Fortinet",
+    "countInStock": 30,
+    "image": "/images/product_images/16.png",
+    "created_at": "2025-06-26T05:46:49.361437Z",
+    "updated_at": "2026-08-01T05:49:25.482831Z"
+    }
+  },
+  {
+    "model": "base.product",
+    "pk": 17,
+    "fields": {
+    "product_name": "FortiGate 100F",
+    "description": "Fortinet - Enterprise Firewall",
+    "product_price": "95000.00",
+    "brand": "Fortinet",
+    "countInStock": 7,
+    "image": "/images/product_images/17.png",
+    "created_at": "2025-06-26T05:46:49.361437Z",
+    "updated_at": "2026-08-01T05:49:25.482831Z"
+    }
+  },
+  {
+   "model": "base.product", 
+    "pk": 18,
+    "fields": {   
+      "product_name": "FortiGate 200F",
+      "description": "Fortinet - High Performance Firewall",
+      "product_price": "165000.00",
+      "brand": "Fortinet",
+      "countInStock": 5,
+      "image": "/images/product_images/18.png",
+      "created_at": "2025-06-26T05:46:49.361437Z",
+      "updated_at": "2026-08-01T05:49:25.482831Z"
+  }
+  },
+  {
+    "model": "base.product",
+    "pk": 19,
+    "fields": {
+    "product_name": "Palo Alto PA-220",
+    "description": "Palo Alto - Entry Level Firewall",
+    "product_price": "32000.00",
+    "brand": "Palo Alto",
+    "countInStock": 16,
+    "image": "/images/product_images/19.png",
+    "created_at": "2025-06-26T05:46:49.361437Z",
+    "updated_at": "2026-08-01T05:49:25.482831Z"
+    }
+  },
+  {
+    "model": "base.product",
+    "pk": 20,
+    "fields": {
+    "product_name": "Palo Alto PA-820",
+    "description": "Palo Alto - Enterprise Firewall",
+    "product_price": "112000.00",
+    "brand": "Palo Alto",
+    "countInStock": 9,
+    "image": "/images/product_images/20.png",
+    "created_at": "2025-06-26T05:46:49.361437Z",
+    "updated_at": "2026-08-01T05:49:25.482831Z"
+    }
+  },
+  {
+    "model": "base.product",
+    "pk": 21,
+    "fields": {
+    "product_name": "Palo Alto PA-3220",
+    "description": "Palo Alto - High Capacity Firewall",
+    "product_price": "285000.00",
+    "brand": "Palo Alto",
+    "countInStock": 4,
+    "image": "/images/product_images/21.png",
+    "created_at": "2025-06-26T05:46:49.361437Z",
+    "updated_at": "2026-08-01T05:49:25.482831Z"
+    }
+  },
+  {
+    "model": "base.product",
+    "pk": 22,
+    "fields": {
+    "product_name": "Palo Alto PA-5280",
+    "description": "Palo Alto - Data Center Firewall",
+    "product_price": "650000.00",
+    "brand": "Palo Alto",
+    "countInStock": 2,
+    "image": "/images/product_images/22.png",
+    "created_at": "2025-06-26T05:46:49.361437Z",
+    "updated_at": "2026-08-01T05:49:25.482831Z"
+    }
+  },
+  {
+    "model": "base.product",
+    "pk": 23,
+    "fields": {         
+    "product_name": "Check Point 1600",
+    "description": "Check Point - Branch Security Gateway",
+    "product_price": "38000.00",
+    "brand": "Check Point",
+    "countInStock": 19,
+    "image": "/images/product_images/23.png",
+    "created_at": "2025-06-26T05:46:49.361437Z",
+    "updated_at": "2026-08-01T05:49:25.482831Z"
+  }
+  },
+  {
+    "model": "base.product",
+    "pk": 24,
+    "fields": {
+    "product_name": "Check Point 7000",
+    "description": "Check Point - Enterprise Firewall",
+    "product_price": "165000.00",
+    "brand": "Check Point",
+    "countInStock": 5,
+    "image": "/images/product_images/24.png",
+    "created_at": "2025-06-26T05:46:49.361437Z",
+    "updated_at": "2026-08-01T05:49:25.482831Z"
+    }
+  },
+  {
+    "model": "base.product",
+    "pk": 25,
+    "fields": {
+    "product_name": "Aruba CX 6100",
+    "description": "HPE Aruba - Access Layer Switch",
+    "product_price": "55000.00",
+    "brand": "HPE",
+    "countInStock": 12,
+    "image": "/images/product_images/25.png",
+    "created_at": "2025-06-26T05:46:49.361437Z",
+    "updated_at": "2026-08-01T05:49:25.482831Z"
+    }
+  },
+  {
+    "model": "base.product",
+    "pk": 26,
+    "fields": {
+      "product_name": "Aruba CX 8400",
+      "description": "HPE Aruba - Core Switch",
+      "product_price": "320000.00",
+      "brand": "HPE",
+      "countInStock": 4,
+      "image": "/images/product_images/26.png",
+      "created_at": "2025-06-26T05:46:49.361437Z",
+      "updated_at": "2026-08-01T05:49:25.482831Z"
+    }
+  },
+  {
+    "model": "base.product",
+    "pk": 27,
+    "fields": {
+      "product_name": "Huawei CloudEngine 16800",
+      "description": "Huawei - Data Center Core Switch",
+      "product_price": "480000.00",
+      "brand": "Huawei",
+      "countInStock": 3,
+      "image": "/images/product_images/27.png",
+      "created_at": "2025-06-26T05:46:49.361437Z",
+      "updated_at": "2026-08-01T05:49:25.482831Z"
+    }
+  },
+  {
+    "model": "base.product",
+    "pk": 28,
+    "fields": {
+      "product_name": "Dell EMC N1548P",
+      "description": "Dell EMC - Gigabit Managed Switch",
+      "product_price": "48000.00",
+      "brand": "Dell EMC",
+      "countInStock": 18,
+      "image": "/images/product_images/28.png",
+      "created_at": "2025-06-26T05:46:49.361437Z",
+      "updated_at": "2026-08-01T05:49:25.482831Z"
+    }
+  },
+  {
+    "model": "base.product",
+    "pk": 29,
+    "fields": {
+      "product_name": "Dell EMC Z9264F-ON",
+      "description": "Dell EMC - High Speed Data Center Switch",
+      "product_price": "275000.00",
+      "brand": "Dell EMC",
+      "countInStock": 6,
+      "image": "/images/product_images/29.png",
+      "created_at": "2025-06-26T05:46:49.361437Z",
+      "updated_at": "2026-08-01T05:49:25.482831Z"
+    }
+  },
+  {
+    "model": "base.product",
+    "pk": 30,
+    "fields": {
+      "product_name": "Extreme Summit X460-G2",
+      "description": "Extreme Networks - Enterprise Switch",
+      "product_price": "61000.00",
+      "brand": "Extreme Networks",
+      "countInStock": 13,
+      "image": "/images/product_images/30.png",
+      "created_at": "2025-06-26T05:46:49.361437Z",
+      "updated_at": "2026-08-01T05:49:25.482831Z"
+    }
+  },
+  {
+    "model": "base.product",
+    "pk": 31,
+    "fields": {
+      "product_name": "Cisco Aironet 2800",
+      "description": "Cisco - Enterprise Wireless Access Point",
+      "product_price": "18500.00",
+      "brand": "Cisco",
+      "countInStock": 24,
+      "image": "/images/product_images/31.png",
+      "created_at": "2025-06-26T05:46:49.361437Z",
+      "updated_at": "2026-08-01T05:49:25.482831Z"
+    }
+  },
+  {
+    "model": "base.product",
+    "pk": 32,
+    "fields": {
+      "product_name": "Cisco Aironet 3800",
+      "description": "Cisco - High Performance Wireless Access Point",
+      "product_price": "24500.00",
+      "brand": "Cisco",
+      "countInStock": 21,
+      "image": "/images/product_images/32.png",
+      "created_at": "2025-06-26T05:46:49.361437Z",
+      "updated_at": "2026-08-01T05:49:25.482831Z"
+    }
+  },
+  {
+    "model": "base.product",
+    "pk": 33,
+    "fields": {
+      "product_name": "Cisco Catalyst 9100AX",
+      "description": "Cisco - WiFi 6 Enterprise Access Point",
+      "product_price": "36000.00",
+      "brand": "Cisco",
+      "countInStock": 17,
+      "image": "/images/product_images/33.png",
+      "created_at": "2025-06-26T05:46:49.361437Z",
+      "updated_at": "2026-08-01T05:49:25.482831Z"
+    }
+  },
+  {
+    "model": "base.product",
+    "pk": 34,
+    "fields": {
+      "product_name": "Cisco Catalyst 9115AX",
+      "description": "Cisco - Indoor WiFi 6 Access Point",
+      "product_price": "31500.00",
+      "brand": "Cisco",
+      "countInStock": 20,
+      "image": "/images/product_images/34.png",
+      "created_at": "2025-06-26T05:46:49.361437Z",
+      "updated_at": "2026-08-01T05:49:25.482831Z"
+    }
+  }
+
+]
