@@ -17,6 +17,8 @@ SECRET_KEY = 'django-insecure-f#-sa5auxhu=@x!kil#d-omh8*z%kj55_xqbjorpro*1*ss)!x
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+ALLOWED_HOSTS = [ "fs9-kathetagle.onrender.com", "localhost:5173", "127.0.0.1", ]
+
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "https://fs9-tagle.vercel.app",
@@ -59,11 +61,6 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
-    "https://fs9-tagle-o3s4nyna8-kathe6.vercel.app",
-]
-
 ROOT_URLCONF = 'backend.urls'
 
 TEMPLATES = [
@@ -88,10 +85,14 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
 DATABASES = {
-    "default": dj_database_url.parse(
-        "postgresql://postgres:WWcsTgWtKBOjVGxwrtwDxINbuSLbqmui@tramway.proxy.rlwy.net:23300/railway?sslmode=require",
-        conn_max_age=600,
-    )
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'WWcsTgWtKBOjVGxwrtwDxINbuSLbqmui',
+        'HOST': 'tramway.proxy.rlwy.net',
+        'PORT': '23300',
+    }
 }
 
 
