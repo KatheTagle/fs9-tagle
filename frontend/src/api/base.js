@@ -1,1 +1,1 @@
-export const BASE_URL = "https://fs9-kathetagle.onrender.com/api/products/";
+export const BASE_URL = "https://fs9-kathetagle.onrender.com";
