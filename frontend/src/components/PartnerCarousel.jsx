@@ -1,13 +1,14 @@
+
 import React from "react";
 
-import Cisco from "../assets/partners/cs.png";
-import Microsoft from "../assets/partners/ms.jpg";
-import Dell from "../assets/partners/dell.jpg";
-import HP from "../assets/partners/hp.jpg";
-import Intel from "../assets/partners/intel.jpg";
-import Lenovo from "../assets/partners/lenovo.png";
+import Cisco from "../assets/Partners/cs.png";
+import Microsoft from "../assets/Partners/ms.jpg";
+import Dell from "../assets/Partners/dell.jpg";
+import HP from "../assets/Partners/hp.jpg";
+import Intel from "../assets/Partners/intel.jpg";
+import Lenovo from "../assets/Partners/lenovo.png";
 
-const partners = [
+const Partners = [
   Cisco,
   Microsoft,
   Dell,
@@ -15,7 +16,6 @@ const partners = [
   Intel,
   Lenovo,
 ];
-
 
 const PartnerCarousel = () => {
   return (
@@ -26,8 +26,7 @@ const PartnerCarousel = () => {
 
       <div className="overflow-hidden">
         <div className="flex w-max animate-[marquee_20s_linear_infinite]">
-
-          {[...partners, ...partners].map((logo, index) => (
+          {[...Partners, ...Partners].map((logo, index) => (
             <div
               key={index}
               className="mx-6 flex h-36 w-60 flex-shrink-0 items-center justify-center rounded-xl bg-white shadow-lg"
@@ -39,7 +38,6 @@ const PartnerCarousel = () => {
               />
             </div>
           ))}
-
         </div>
       </div>
     </section>
